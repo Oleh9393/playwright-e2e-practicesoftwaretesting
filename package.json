@@ -1,15 +1,14 @@
 {
-  "name": "ownproject",
+  "name": "playwright-e2e-practicesoftwaretesting",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "test": "npx playwright test",
     "lint": "npx eslint . --fix"
   },
   "keywords": [],
-  "author": "",
+  "author": "Oleh Pimkin",
   "license": "ISC",
-  "description": "",
+  "description": "Playwright + TypeScript E2E tests for practicesoftwaretesting.com",
   "devDependencies": {
     "@eslint/js": "^9.33.0",
     "@faker-js/faker": "^10.1.0",

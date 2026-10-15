@@ -15,10 +15,8 @@ const priceSortTestCases = [
 ];
 
 for (const testCase of priceSortTestCases) {
-    test(testCase.testName, async ({ app }) => {
+    test(`${testCase.testName}`, async ({ app }) => {
 
-        // Skip test in CI environment due to Cloudflare protection
-        test.skip(!!process.env.CI, 'Test is skipped in CI due to the Cloudflare protection.');
 
         await app.page.goto('/');
         await app.homePage.sortingButton.selectOption({ label: testCase.sortOption });

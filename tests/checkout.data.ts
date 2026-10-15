@@ -1,4 +1,6 @@
 export const BILLING_ADDRESS = {
+    country: 'UA',
+    houseNumber: '12',
     street: '123 Main Street',
     city: 'Lviv',
     state: 'Lvivska Oblast',

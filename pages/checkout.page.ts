@@ -12,6 +12,8 @@ export class CheckoutPage {
     proceedToCheckout3: Locator;
     paymentMethod: Locator;
     paymentSuccessMessage: Locator;
+    country: Locator;
+    houseNumber: Locator;
     street: Locator;
     city: Locator;
     state: Locator;
@@ -35,6 +37,8 @@ export class CheckoutPage {
         this.proceedToCheckout3 = this.page.getByTestId("proceed-3");
         this.paymentMethod = this.page.getByTestId("payment-method");
         this.paymentSuccessMessage = this.page.getByTestId("payment-success-message");
+        this.country = this.page.getByTestId("country");
+        this.houseNumber = this.page.getByTestId("house_number");
         this.street = this.page.getByTestId("street");
         this.city = this.page.getByTestId("city");
         this.state = this.page.getByTestId("state");

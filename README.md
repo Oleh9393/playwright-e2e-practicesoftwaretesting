@@ -2,7 +2,7 @@
 
 End-to-end test suite for the demo web shop [practicesoftwaretesting.com](https://practicesoftwaretesting.com), built with Playwright and TypeScript.
 
-[![Playwright Tests](https://github.com/Oleh9393/OwnProject/actions/workflows/playwright.yml/badge.svg)](https://github.com/Oleh9393/OwnProject/actions/workflows/playwright.yml)
+[![Playwright Tests](https://github.com/Oleh9393/playwright-e2e-practicesoftwaretesting/actions/workflows/playwright.yml/badge.svg)](https://github.com/Oleh9393/playwright-e2e-practicesoftwaretesting/actions/workflows/playwright.yml)
 
 ## What is covered
 
@@ -43,8 +43,6 @@ npx playwright test          # run all tests
 npx playwright show-report   # open the HTML report
 ```
 
-## Known limitation
+## Notes
 
-The checkout payment test is skipped on CI (`test.skip(!!process.env.CI)`) because the demo site is behind Cloudflare protection, which blocks GitHub-hosted runners. It runs locally.
-
-The credentials in `data/creds.ts` belong to the public demo account provided by the site and are not secret.
+All tests run on CI. The credentials in `data/creds.ts` belong to the public demo account provided by the site and are not secret.
