@@ -2,7 +2,7 @@
 
 End-to-end test suite for the demo web shop [practicesoftwaretesting.com](https://practicesoftwaretesting.com), built with Playwright and TypeScript.
 
-[![Playwright Tests](https://github.com/Oleh9393/OwnProject/actions/workflows/playwright.yml/badge.svg)](https://github.com/Oleh9393/OwnProject/actions/workflows/playwright.yml)
+[![Playwright Tests](https://github.com/Oleh9393/playwright-e2e-practicesoftwaretesting/actions/workflows/playwright.yml/badge.svg)](https://github.com/Oleh9393/playwright-e2e-practicesoftwaretesting/actions/workflows/playwright.yml)
 
 ## What is covered
 

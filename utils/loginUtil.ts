@@ -31,7 +31,7 @@ export async function getLoggedInPage(browser: Browser, token: string): Promise<
             cookies: [],
             origins: [
                 {
-                    origin: 'https://api.practicesoftwaretesting.com',
+                    origin: 'https://practicesoftwaretesting.com',
                     localStorage: [
                         { name: 'auth-token', value: token },
                     ],

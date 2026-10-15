@@ -4,8 +4,6 @@ import { BILLING_ADDRESS, TEST_CARD } from './checkout.data';
 
 test('Successful product payment verification', async ({ loggedInApp }) => {
 
-// Skip test in CI environment due to Cloudflare protection
-    test.skip(!!process.env.CI, 'Test is skipped in CI due to the Cloudflare protection.');
 
 
 
@@ -28,6 +26,8 @@ test('Successful product payment verification', async ({ loggedInApp }) => {
     await expect(loggedInApp.checkout.loginMessage).toBeVisible();
     await loggedInApp.checkout.proceedToCheckout2.click();
 
+    await loggedInApp.checkout.country.selectOption(BILLING_ADDRESS.country);
+    await loggedInApp.checkout.houseNumber.fill(BILLING_ADDRESS.houseNumber);
     await loggedInApp.checkout.street.fill(BILLING_ADDRESS.street);
     await loggedInApp.checkout.city.fill(BILLING_ADDRESS.city);
     await loggedInApp.checkout.state.fill(BILLING_ADDRESS.state);
