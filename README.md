@@ -43,8 +43,6 @@ npx playwright test          # run all tests
 npx playwright show-report   # open the HTML report
 ```
 
-## Known limitation
+## Notes
 
-The checkout payment test is skipped on CI (`test.skip(!!process.env.CI)`) because the demo site is behind Cloudflare protection, which blocks GitHub-hosted runners. It runs locally.
-
-The credentials in `data/creds.ts` belong to the public demo account provided by the site and are not secret.
+All tests run on CI. The credentials in `data/creds.ts` belong to the public demo account provided by the site and are not secret.
